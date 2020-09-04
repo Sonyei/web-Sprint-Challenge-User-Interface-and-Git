@@ -148,9 +148,9 @@ header {
 
 .container-about-page{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 2%;
+    margin: 2% 0;
 }
 
 .container-about-page h2 {
@@ -172,10 +172,10 @@ header {
 }
 
 .work {
-    width: 45%;
+    width: 48%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
     border-bottom: 1px dashed black;
     margin: 4% 0;
