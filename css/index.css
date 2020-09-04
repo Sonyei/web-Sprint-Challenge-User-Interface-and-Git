@@ -150,11 +150,11 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 2% 0;
+    margin: 0 0 2%;
 }
 
 .container-about-page h2 {
-    margin: 2% 0;
+    margin: 0;
     padding: 0;
 }
 
