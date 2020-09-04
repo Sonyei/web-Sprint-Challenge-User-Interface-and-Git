@@ -1,51 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+/*General styles*/
 
 * {
     box-sizing: border-box;
@@ -64,6 +17,38 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 800px;
+    margin: 0 auto;
+}
+
+/*This is the beginning of the top content*/
+
+.header-links {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    margin: 2% 0;
+}
+
+.logo {
+    margin: 0 2% 10%;
+}
+
+.header-links a{
+    text-decoration: none;
+    color: black;
+    font-size: .9rem;
+}
+
+.header-img {
+    display: flex;
+    margin-bottom: 3%;
 }
 
 .container {
@@ -85,14 +70,21 @@ p {
     padding-bottom: 20px;  
 }
 
+/*This is the beginning of the middle content*/
+
 .middle-content {
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
 }
 
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
+}
+
+/*index specific*/
+
+#index-container {
+    border-bottom: 1px dashed black;
 }
 
 .middle-content .boxes {
@@ -111,6 +103,109 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+#a {
+    background: teal;
+}
+
+#b {
+    background: gold;
+}
+
+#c {
+    background: cadetblue;
+}
+
+#d {
+    background: coral;
+}
+
+#e {
+    background: crimson;
+}
+
+#f {
+    background: forestgreen;
+}
+
+#g {
+    background: darkorchid;
+}
+
+#h {
+    background: hotpink;
+}
+
+#i {
+    background: indigo;
+}
+
+#j {
+    background: dodgerblue;
+}
+
+/*About specific*/
+#about-border {
+    border-bottom: 1px dashed black;
+    padding-bottom: 2%;
+    margin-bottom: 4%;
+}
+
+.container-about-page{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 0 2%;
+}
+
+.container-about-page h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.container-about-page p {
+    margin: 4% 0;
+}
+
+.about-text {
+    margin: 0 3%;
+}
+
+#about-bottom {
+    border: none;
+}
+
+.about-text h2 {
+    margin: 0 0 2%;
+}
+
+.work {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    border-bottom: 1px dashed black;
+    margin-bottom: 4%;
+}
+
+.work a{
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    box-shadow: 0 0 0 2px black;
+    width: 30%;
+    padding: 3%;
+    margin-bottom: 4%;
+}
+
+.work h2 {
+    margin-top: 4%;
+}
+
+/*This is the beginning of the bottom content*/
 
 .bottom-content {
     display: flex;
