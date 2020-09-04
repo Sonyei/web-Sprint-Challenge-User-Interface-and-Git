@@ -82,6 +82,8 @@ header {
     margin-bottom: 0;
 }
 
+/*index specific*/
+
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -137,6 +139,14 @@ header {
 
 #j {
     background: dodgerblue;
+}
+
+/*About specific*/
+
+.work {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
 }
 
 /*This is the beginning of the bottom content*/
