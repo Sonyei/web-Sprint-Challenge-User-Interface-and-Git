@@ -1,3 +1,5 @@
+/*General styles*/
+
 * {
     box-sizing: border-box;
 }
@@ -15,6 +17,38 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 800px;
+    margin: 0 auto;
+}
+
+/*This is the beginning of the top content*/
+
+.header-links {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    margin: 2% 0;
+}
+
+.logo {
+    margin: 0 2% 10%;
+}
+
+.header-links a{
+    text-decoration: none;
+    color: black;
+    font-size: .9rem;
+}
+
+.header-img {
+    display: flex;
+    margin-bottom: 3%;
 }
 
 .container {
@@ -35,6 +69,8 @@ p {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
+
+/*This is the beginning of the middle content*/
 
 .middle-content {
     margin-bottom: 20px;
@@ -102,6 +138,8 @@ p {
 #j {
     background: dodgerblue;
 }
+
+/*This is the beginning of the bottom content*/
 
 .bottom-content {
     display: flex;
